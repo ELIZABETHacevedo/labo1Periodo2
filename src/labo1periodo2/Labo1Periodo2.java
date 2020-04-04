@@ -5,9 +5,11 @@
  */
 package labo1periodo2;
 
+import instancias.Aves;
 import instancias.Insectos;
 import instancias.Reptiles;
 import instancias.mamiferos;
+import instancias.peces;
 
 /**
  *
@@ -48,12 +50,28 @@ public class Labo1Periodo2 {
         m.cazar();
         System.out.println(" ");
         
-        
+        peces p=new peces("gris","salada","cazar","chambita","tiburon",2,1,"peces");
+        p.verInfo();
+        p.comer();
+        p.dormir();
+        p.nadar();
         
         System.out.println(" ");
         
-        
-        
+        Aves a=new Aves(true,0.5,"claudio","loro",2,8,"semillas");
+        a.verInfo();
+        a.comer();
+        a.dormir();
+        a.hablar();
+        a.volar();
+        System.out.println(" ");
+        Aves a2=new Aves(false,1.0,"ramira","aguila",2,8,"aves");
+        a2.verInfo();
+        a2.comer();
+        a2.dormir();
+        a2.hablar();
+        a2.volar();
+        a2.ponerHuevos();
     }
     
 }

@@ -36,7 +36,11 @@ public void ponerHuevos(){
 }
 
     public void hablar(){
-    System.out.println("el "+this.nombreEspecie+" "+this.Nombre+" "+this.comunicacion);    
+        if (comunicacion) {
+            System.out.println("el "+this.nombreEspecie+" "+this.Nombre+" dice hola");
+        }else{
+            System.out.println("el "+this.nombreEspecie+" "+this.Nombre+" no habla");
+        }
     }
     
     @Override
@@ -51,7 +55,7 @@ public void ponerHuevos(){
 
     @Override
     public void verInfo() {
-        System.out.println("el "+this.nombreEspecie+" "+this.Nombre+"pesa "+this.peso);
+        System.out.println("el "+this.nombreEspecie+" "+this.Nombre+" pesa "+this.peso+" lbs");
        }
     
 }
