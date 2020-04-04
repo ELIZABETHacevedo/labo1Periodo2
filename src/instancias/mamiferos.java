@@ -13,9 +13,9 @@ public class mamiferos extends Animal{
     public Boolean cola,caza;
     public String hablar;
 
-    public mamiferos(Boolean cola, String tipo, String Nombre, String nombreEspecie, int edad, int horasSuennio,String alimento,String hablar) {
+    public mamiferos(Boolean caza, String Nombre, String nombreEspecie, int edad, int horasSuennio,String alimento,String hablar) {
         super(Nombre, nombreEspecie, edad, horasSuennio,alimento);
-        this.cola = cola;
+        this.caza = caza;
         this.hablar=hablar;
     }
     
@@ -44,12 +44,12 @@ public class mamiferos extends Animal{
 
     @Override
     public void dormir() {
-    System.out.println("el "+this.nombreEspecie+" "+this.Nombre+" duerme "+this.nombreEspecie+" horas");
+    System.out.println("el "+this.nombreEspecie+" "+this.Nombre+" duerme "+this.horasSuennio+" horas");
     }
 
     @Override
     public void verInfo() {
-    System.out.println("el "+this.nombreEspecie+" "+this.Nombre+" tiene"+this.edad+" años");
+    System.out.println("el "+this.nombreEspecie+" "+this.Nombre+" tiene "+this.edad+" años");
     }
     
 }

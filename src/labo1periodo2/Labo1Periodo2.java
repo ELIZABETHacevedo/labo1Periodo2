@@ -7,6 +7,7 @@ package labo1periodo2;
 
 import instancias.Insectos;
 import instancias.Reptiles;
+import instancias.mamiferos;
 
 /**
  *
@@ -37,6 +38,22 @@ public class Labo1Periodo2 {
         i.atacar();
         i.caminar();
         i.camuflarse();
+        
+        System.out.println(" ");
+        mamiferos m =new mamiferos(true,"pepe","gato",2,8,"ratones","miau");
+        m.verInfo();
+        m.comer();
+        m.dormir();
+        m.comunicarse();
+        m.cazar();
+        System.out.println(" ");
+        
+        
+        
+        System.out.println(" ");
+        
+        
+        
     }
     
 }
